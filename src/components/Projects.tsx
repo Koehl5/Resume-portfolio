@@ -4,13 +4,13 @@ const projects = [
         title: "KCA Landscaping Platform",
         description: "Developed a secure-by-design client management system featuring encrypted data handling and granular access controls for business-critical operations.",
         tags: ["Next.js", "Encryption", "PostgreSQL", "Auth"],
-        link: "#",
+        link: "https://kcalandscaping.vercel.app",
     },
     {
         title: "Secure Lifecycle Ecosystem",
         description: "Engineered a privacy-focused productivity suite with hardened API endpoints and secure session management for comprehensive personal data protection.",
         tags: ["Python", "Flask", "PenTesting", "SQLite"],
-        link: "#",
+        link: "https://github.com/Koehl5/Organize-your-life-",
     }
 ];
 

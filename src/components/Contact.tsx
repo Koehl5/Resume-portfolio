@@ -11,27 +11,13 @@ const Contact = () => {
                             I'm currently looking for new opportunities and collaborations. Feel free to reach out via any of the channels below.
                         </p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                            {/* Internal Security: Contact Obfuscation & Honeypot */}
-                            <div style={{ display: 'none' }} aria-hidden="true">
-                                <input type="text" name="b_honeypot" tabIndex={-1} value="" readOnly />
-                            </div>
-
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                                 <div className="glass" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px' }}>
                                     📧
                                 </div>
                                 <div>
-                                    <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Secure Channel</p>
-                                    <a
-                                        href="#"
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            window.location.href = `mailto:${['koehl', 'comiskeyb', '@', 'gmail.com'].join('')}`;
-                                        }}
-                                        style={{ fontSize: '1.1rem', fontWeight: 600 }}
-                                    >
-                                        View Secure Email
-                                    </a>
+                                    <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Email</p>
+                                    <a href="mailto:koehlcomiskeyb@gmail.com" style={{ fontSize: '1.1rem', fontWeight: 600 }}>koehlcomiskeyb@gmail.com</a>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -39,17 +25,8 @@ const Contact = () => {
                                     📱
                                 </div>
                                 <div>
-                                    <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Encrypted Voice</p>
-                                    <a
-                                        href="#"
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            window.location.href = `tel:${['570', '885', '2952'].join('')}`;
-                                        }}
-                                        style={{ fontSize: '1.1rem', fontWeight: 600 }}
-                                    >
-                                        Establish Connection
-                                    </a>
+                                    <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Phone</p>
+                                    <a href="tel:5708852952" style={{ fontSize: '1.1rem', fontWeight: 600 }}>(570) 885-2952</a>
                                 </div>
                             </div>
                         </div>
