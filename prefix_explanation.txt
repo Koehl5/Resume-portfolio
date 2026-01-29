@@ -1,0 +1,8 @@
+Branding First Impression: It mimics a Linux terminal or a high-end security mainframe. It tells the visitor immediately that they aren't just looking at a standard resume, but at the work of a security professional.
+
+Verification Logs: The text that scrolled by was simulated system logs showing things like:
+- Initiating Secure Boot...
+- Establishing encrypted tunnel...
+- Signature Verified: KOEHL_COMISKEY_v1.0
+
+The "Decrypt" Effect: Technically, it’s a React component that prevents the rest of the site from loading until it "verifies" your identity. Once it finishes, it "unlocks" and fades into your actual portfolio.

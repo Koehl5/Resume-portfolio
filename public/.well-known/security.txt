@@ -1,0 +1,5 @@
+Contact: mailto:koehlcomiskeyb@gmail.com
+Expires: 2027-01-28T22:45:00.000Z
+Preferred-Languages: en
+Canonical: https://koehl-resume.vercel.app/.well-known/security.txt
+Policy: https://koehl-resume.vercel.app/security-policy.html
