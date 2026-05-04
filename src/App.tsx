@@ -1,18 +1,10 @@
-import { useState } from 'react';
+
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Articles from './components/Articles';
 import Contact from './components/Contact';
-import BootSequence from './components/BootSequence';
-
 function App() {
-  const [isBooted, setIsBooted] = useState(false);
-
-  if (!isBooted) {
-    return <BootSequence onComplete={() => setIsBooted(true)} />;
-  }
-
   return (
     <div className="app">
       <nav className="container" style={{

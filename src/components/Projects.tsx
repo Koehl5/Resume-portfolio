@@ -1,16 +1,41 @@
 
 const projects = [
     {
+        title: "Studivian AI Platform",
+        description: "An enterprise-grade AI study suite featuring automated note generation, 2FA security, and Argon2id password hashing for maximum data protection.",
+        tags: ["Next.js", "Gemini AI", "Security", "PostgreSQL"],
+        link: "#",
+        comingSoon: true
+    },
+    {
+        title: "RankReach SEO",
+        description: "A social-inspired SEO platform with AI-driven outreach, interactive leaderboards, and high-fidelity schema graphing for digital marketers.",
+        tags: ["Astro", "TypeScript", "AI", "Analytics"],
+        link: "#",
+    },
+    {
+        title: "Luzerne Cash Home Buyers",
+        description: "A hardened real estate landing page optimized for local SEO, featuring CSP security headers, honeypot traps, and high-conversion lead forms.",
+        tags: ["SEO", "Web Security", "React", "Optimization"],
+        link: "https://www.luzernecashhomebuyers.com",
+    },
+    {
+        title: "Busy Bee Baking",
+        description: "A premium bakery website with a dynamic menu system, responsive image galleries, and a streamlined UX for local business growth.",
+        tags: ["React", "Vite", "UX/UI", "Responsive"],
+        link: "https://github.com/Koehl5/BusyBeeBakery",
+    },
+    {
         title: "KCA Landscaping Platform",
         description: "Developed a secure-by-design client management system featuring encrypted data handling and granular access controls for business-critical operations.",
         tags: ["Next.js", "Encryption", "PostgreSQL", "Auth"],
         link: "https://kcalandscaping.vercel.app",
     },
     {
-        title: "Secure Lifecycle Ecosystem",
-        description: "Engineered a privacy-focused productivity suite with hardened API endpoints and secure session management for comprehensive personal data protection.",
-        tags: ["Python", "Flask", "PenTesting", "SQLite"],
-        link: "https://github.com/Koehl5/Organize-your-life-",
+        title: "Electric Surge Club",
+        description: "Engineered a modern web platform for a premier athletic club, featuring responsive design and streamlined user engagement.",
+        tags: ["React", "Vite", "TailwindCSS", "SEO"],
+        link: "https://electric-surge.vercel.app/",
     }
 ];
 
@@ -45,8 +70,18 @@ const Projects: React.FC = () => {
                                     </span>
                                 ))}
                             </div>
-                            <a href={project.link} className="btn btn-secondary" style={{ width: '100%', textAlign: 'center' }}>
-                                Learn More
+                            <a 
+                                href={project.link} 
+                                className={`btn ${project.comingSoon ? 'btn-disabled' : 'btn-secondary'}`} 
+                                style={{ 
+                                    width: '100%', 
+                                    textAlign: 'center',
+                                    opacity: project.comingSoon ? 0.7 : 1,
+                                    cursor: project.comingSoon ? 'default' : 'pointer'
+                                }}
+                                onClick={(e) => project.comingSoon && e.preventDefault()}
+                            >
+                                {project.comingSoon ? 'Coming Soon!' : 'Learn More'}
                             </a>
                         </div>
                     ))}

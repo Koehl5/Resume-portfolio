@@ -2,18 +2,17 @@
 const Hero: React.FC = () => {
     return (
         <header className="section hero" style={{ position: 'relative', overflow: 'hidden' }}>
-            <div className="scanline"></div>
             <div className="container" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div className="animate-fade-in" style={{ textAlign: 'center', width: '100%' }}>
                     <div style={{
                         display: 'inline-block',
-                        padding: '0.5rem 1.25rem',
+                        padding: '0.4rem 1.25rem',
                         borderRadius: '30px',
-                        background: 'rgba(99, 102, 241, 0.1)',
-                        border: '1px solid rgba(99, 102, 241, 0.2)',
-                        color: 'var(--accent-color)',
-                        fontSize: '0.85rem',
-                        fontWeight: 700,
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        color: 'var(--text-secondary)',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
                         textTransform: 'uppercase',
                         letterSpacing: '0.15em',
                         marginBottom: '3rem'
@@ -31,8 +30,8 @@ const Hero: React.FC = () => {
                             height: '280px',
                             background: 'var(--accent-gradient)',
                             borderRadius: '50%',
-                            filter: 'blur(50px)',
-                            opacity: 0.15,
+                            filter: 'blur(70px)',
+                            opacity: 0.1,
                             zIndex: -1
                         }}></div>
                         <img
@@ -43,20 +42,20 @@ const Hero: React.FC = () => {
                                 height: '260px',
                                 borderRadius: '50%',
                                 objectFit: 'cover',
-                                border: '3px solid rgba(255,255,255,0.05)',
-                                boxShadow: '0 30px 60px rgba(0,0,0,0.6)'
+                                border: '1px solid rgba(255,255,255,0.08)',
+                                boxShadow: '0 20px 40px rgba(0,0,0,0.8)'
                             }}
                         />
                     </div>
-                    <h1 style={{ fontSize: 'min(10vw, 7rem)', marginBottom: '1.5rem', fontWeight: 900, letterSpacing: '-0.04em', lineHeight: 0.9 }}>
+                    <h1 style={{ fontSize: 'min(10vw, 7.5rem)', marginBottom: '1.5rem', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 0.95 }}>
                         <span className="title-gradient">Koehl Comiskey</span>
                     </h1>
-                    <p style={{ fontSize: '1.6rem', color: 'var(--text-secondary)', maxWidth: '900px', margin: '0 auto 4.5rem', fontWeight: 300, lineHeight: 1.5 }}>
-                        <span style={{ color: 'white', fontWeight: 600 }}>Security Researcher & Software Engineer</span> specializing in architecting resilient, secure-by-design applications and offensive security research.
+                    <p style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', maxWidth: '850px', margin: '0 auto 4rem', fontWeight: 300, lineHeight: 1.6 }}>
+                        <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Lead Consultant at KC Software</span> specializing in full-stack engineering, offensive security research, and architecting resilient digital ecosystems.
                     </p>
                     <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="#projects" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem' }}>Explore Projects</a>
-                        <a href="/Resume.pdf" target="_blank" className="btn btn-secondary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem' }}>Resume</a>
+                        <a href="#projects" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.05rem', borderRadius: '8px' }}>Explore Projects</a>
+                        <a href="/Resume.pdf" target="_blank" className="btn btn-secondary" style={{ padding: '1rem 2.5rem', fontSize: '1.05rem', borderRadius: '8px' }}>Resume</a>
                     </div>
                 </div>
             </div>
